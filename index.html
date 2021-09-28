@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./color-img.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        ul{
+           float: left;
+           list-style: none;
+           margin-top: 25px;
+           margin-left: 35px;
+        }
+        ul li{
+            display: inline-block;
+            line-height: 20px;
+            width: 100px;
+            font-size: 20px;
+            margin-left: 2px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            display: block;
+        }
+        ul li a:hover{
+            background-color: #ffffff;
+            color: #000;
+        }
+        ul li ul li{
+            display: none;
+        }
+        ul li:hover ul li{
+            display: block;
+        }
+        .logo img{
+            float: left;
+            width: 100px;
+            height: auto;
+        }
+        .main{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .container{
+            display: flex;
+        }
+        .blog{
+          position: absolute;
+          top: 50%;
+          left: 30%;
+          color: #fff;
+        }
+        .blog h1{
+            font-size: 35px;
+            padding-bottom: 15px;
+        }
+        .blog p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="free-logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a>
+                    <ul>
+                        <li><a href="#">Photo</a></li>
+                        <li><a href="#">Photo</a></li>
+                        <li><a href="#">Photo</a></li>
+                        <li><a href="#">Photo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="blog">
+                <h1>How To Learning English Everyday</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Quas totam voluptatem commodi explicabo iusto voluptatibus,<br> vitae tempore ullam itaque eaque illo consequuntur <br> voluptates quo omnis pariatur, porro ipsa assumenda recusandae <br> maiores, maxime cum eius. Voluptatibus, repellendus. Accusantium <br> laudantium alias distinctio eum molestias asperiores <br> ipsum incidunt dolorum ipsam maiores, amet velit?</p>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
